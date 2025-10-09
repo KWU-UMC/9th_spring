@@ -254,7 +254,7 @@ https://github.com/na311ng/umc9th
     트러블슈팅 : Member entity에서 쓴 BaseEntity를 쓰니까 erd에 없던 updated_at 컬럼이 생기는 문제 발생
     해결 방안 : BaseEntity를 분리하기로 결정
 
-### refactor/base-entity-structure Commit 48fde87
+### refactor/base-entity-structure Commit de16a0b
     BaseEntity 분리
     
     BaseEntity를 BaseCreatedEntity(created_at), BaseTimeEntity(updated_at)으로 분리함
@@ -274,7 +274,7 @@ https://github.com/na311ng/umc9th
             ┣ 📄 BaseTimeEntity.java
         ┗ 📄 Umc9thApplication.java
 
-### feat/store-entity Commit db9d3f2
+### feat/store-entity Commit 4f11add
     store/location 엔티티 생성 후 매핑 완료
 
     store 엔티티에 createdAt 및 updatedAt을 넣지 않은 이유는
@@ -288,11 +288,11 @@ https://github.com/na311ng/umc9th
     또, 리뷰-리플라이 관계는 리뷰 하나에 점포 답글 하나가 달리기 때문에 1:1로 매핑
     리뷰-리뷰포토 의 경우, 리뷰가 삭제되면 리뷰포토도 삭제되기 때문에 양방향 매핑 설정해줌
 
-### fix/nullable
+### fix/nullable Commit d563a63
     fix: term, food nullable false로 변경
     Member의 deletedAt 타입 LocalDateTime으로 변경
 
-### fix/member-default-values
+### fix/member-default-values Commit d9e1720
 
     DDL에 EnumType이랑 defalut 값이 표기가 안되어 있어 columnDefinition으로 보이도록 수정 
 
