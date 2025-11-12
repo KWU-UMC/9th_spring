@@ -89,3 +89,5 @@
     - @Builder, @NoArgsConstructor 같은 Lombok 기능 X
     - JPA Entity로는 사용 불가 (프록시 초기화, setter, 빈 생성자 필요)
     - Jackson 버전에 따라 record 지원 문제 발생 가능
+
+-----
